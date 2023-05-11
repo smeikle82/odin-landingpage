@@ -75,5 +75,34 @@ body{
 }
 
 /* CONTENT STYLES */
-
-
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.image-gallery{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.image-gallery h3{
+    align-self: center;
+}
+.gallery-items{
+    display: flex;
+    gap: 36px;
+}
+.gallery-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image-gallery .img-placeholder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    width: 115px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
