@@ -4,9 +4,12 @@ body{
     margin: 0;
 }
 .container{
+    min-height: 100vh;
     background-color: whitesmoke;
     margin: 0;
     padding: 0 0;
+    display: flex;
+    flex-direction: column;
 }
 .header,
 .content,
@@ -27,6 +30,7 @@ body{
 .header{
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 .header-top{
     display: flex;
@@ -67,6 +71,14 @@ body{
     border-radius: 5px;
     margin: 5px 0px;
 }
+.header-bottom-left button a{
+    text-decoration: none;
+    color: white;
+}
+.header-image-placeholder img{
+    height: 160px;
+    width: 350px;
+}
 .header-image-placeholder{
     display: flex;
     align-items: center;
@@ -99,13 +111,17 @@ body{
     align-items: center;
     justify-content: center;
 }
+.gallery-item img{
+    height: 110px;
+    width: 115px;
+}
 .image-gallery .img-placeholder{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 110px;
     width: 115px;
-    border: 2px solid blue;
+    /* border: 2px solid blue;*/
     border-radius: 10px;
 }
 
@@ -135,7 +151,7 @@ body{
 
 .call-to-action{
     background-color: #3882F6;
-    margin: 20px 40px;
+    margin: 50px 40px 0px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,9 +175,15 @@ body{
 
 .footer{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:end;
+    justify-content:center;
     height: 70px;
     color: white;
     font-size: 12px;
+    margin-top: auto;
+    gap: 20px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
 }
