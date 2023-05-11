@@ -106,3 +106,23 @@ body{
     border: 2px solid blue;
     border-radius: 10px;
 }
+
+/* QUOTE SECTION STYLES */
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7Eb;
+}
+.quote p:first-of-type{
+    padding: 0 10%;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+.citation{
+    align-self:flex-end;
+    padding-right: 20%;
+    font-weight: bold;
+    font-size: 16px;
+}
